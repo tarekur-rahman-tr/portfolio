@@ -1,0 +1,856 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Md. Tarekur Rahman - Computer Science & Engineering Student, Frontend Developer, Competitive Programmer. Portfolio showcasing projects, skills, and achievements.">
+    <meta name="keywords" content="Md. Tarekur Rahman, Portfolio, Computer Science, Frontend Developer, CSE Student, Web Developer">
+    <meta name="author" content="Md. Tarekur Rahman">
+    <title>Md. Tarekur Rahman | Computer Science & Engineering Student</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Poppins via Fontsource -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.0.8/index.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.0.8/300.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.0.8/400.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.0.8/500.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.0.8/600.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.0.8/700.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.0.8/800.min.css">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Mouse Glow Effect -->
+    <div class="mouse-glow"></div>
+
+    <!-- Page Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Loading Portfolio...</div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Tarekur</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div id="particles-js" class="particles-container"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Md. Tarekur <span class="gradient-text">Rahman</span></h1>
+                <div class="hero-typed-wrapper">
+                    <span class="hero-typed-prefix">I'm a </span>
+                    <span class="typed-text" id="typed-text"></span>
+                </div>
+                <p class="hero-description">
+                    A passionate Computer Science & Engineering student crafting elegant digital experiences.
+                    I love building scalable web applications and solving complex problems through clean code.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary ripple-btn">
+                        <i class="fas fa-download"></i>
+                        <span>Download CV</span>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary ripple-btn">
+                        <span>View Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+                <div class="image-glow"></div>
+                <div class="image-wrapper">
+                    <img src="https://image.qwenlm.ai/public_source/55b14451-c8e6-4ce1-a6c9-767a8f2f5028/13164b79e-7b99-4ddb-a113-13a14afd2d14.png" alt="Md. Tarekur Rahman - Profile Photo" loading="lazy">
+                </div>
+                <div class="floating-badge badge-1"><i class="fas fa-code"></i></div>
+                <div class="floating-badge badge-2"><i class="fas fa-laptop-code"></i></div>
+                <div class="floating-badge badge-3"><i class="fas fa-trophy"></i></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Know Me <span class="gradient-text">Better</span></h2>
+                <p class="section-subtitle">A glimpse into who I am and what drives me</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-frame">
+                        <img src="image/profile.png" alt="About Md. Tarekur Rahman" loading="lazy">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="about-experience-badge">
+                        <span class="exp-number">2+</span>
+                        <span class="exp-text">Years of<br>Coding</span>
+                    </div>
+                </div>
+                <div class="about-content" data-aos="fade-left">
+                    <h3 class="about-heading">I'm Md. Tarekur Rahman</h3>
+                    <h4 class="about-subheading">Computer Science & Engineering Student</h4>
+                    <p class="about-text">
+                        I'm a dedicated CSE student at East Delta University with a deep passion for software engineering
+                        and web development. I love exploring new technologies, solving complex problems, and building
+                        applications that make a difference.
+                    </p>
+                    <p class="about-text">
+                        My journey in programming started with curiosity and has evolved into a genuine love for creating
+                        elegant solutions. I'm constantly learning, experimenting, and pushing my boundaries to become
+                        a better developer every day.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label">Name:</span>
+                            <span class="info-value">Md. Tarekur Rahman</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value">tarekurrahman.tek@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">From:</span>
+                            <span class="info-value">Chittagong, Bangladesh</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Available:</span>
+                            <span class="info-value available">Open to Work</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary ripple-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Let's Talk</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-card glass-card" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-card glass-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="stat-number" data-target="25">0</div>
+                    <div class="stat-label">Certificates</div>
+                </div>
+                <div class="stat-card glass-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-icon"><i class="fas fa-brain"></i></div>
+                    <div class="stat-number" data-target="300">0</div>
+                    <div class="stat-label">Problems Solved</div>
+                </div>
+                <div class="stat-card glass-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="stat-number" data-target="2">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">My Skills</span>
+                <h2 class="section-title">Technical <span class="gradient-text">Expertise</span></h2>
+                <p class="section-subtitle">Technologies I work with and tools I use daily</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category glass-card" data-aos="fade-up">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-palette"></i></div>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-html5 skill-icon" style="color:#E34F26"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-css3-alt skill-icon" style="color:#1572B6"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-js skill-icon" style="color:#F7DF1E"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-wind skill-icon" style="color:#38BDF8"></i>
+                                <span>Tailwind CSS</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-server"></i></div>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-node-js skill-icon" style="color:#68A063"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-cogs skill-icon" style="color:#3B82F6"></i>
+                                <span>Express.js</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-database skill-icon" style="color:#00758F"></i>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-leaf skill-icon" style="color:#47A248"></i>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming -->
+                <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-code"></i></div>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-microchip skill-icon" style="color:#00599C"></i>
+                                <span>C</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-microchip skill-icon" style="color:#00599C"></i>
+                                <span>C++</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-python skill-icon" style="color:#3776AB"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-java skill-icon" style="color:#ED8B00"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-tools"></i></div>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-git-alt skill-icon" style="color:#F05032"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-github skill-icon" style="color:#fff"></i>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-code skill-icon" style="color:#007ACC"></i>
+                                <span>VS Code</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-figma skill-icon" style="color:#F24E1E"></i>
+                                <span>Figma</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">A showcase of my recent development work</p>
+            </div>
+
+            <div class="project-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card glass-card" data-category="frontend web" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="https://image.qwenlm.ai/public_source/55b14451-c8e6-4ce1-a6c9-767a8f2f5028/14b8726df-d185-4cd7-b8bc-066284f9443b.png" alt="Portfolio Website" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-desc">A modern, responsive portfolio website with glassmorphism design and smooth animations.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card" data-category="web app" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://image.qwenlm.ai/public_source/55b14451-c8e6-4ce1-a6c9-767a8f2f5028/186f62ae5-37d8-495d-a791-88e91cb92cb7.png" alt="Student Management System" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Student Management System</h3>
+                        <p class="project-desc">Full-stack student management system with CRUD operations and analytics dashboard.</p>
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Express</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card" data-category="app frontend" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://image.qwenlm.ai/public_source/55b14451-c8e6-4ce1-a6c9-767a8f2f5028/1008ce7d8-7159-4860-99bf-1105447a5f50.png" alt="Weather App" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather App</h3>
+                        <p class="project-desc">Real-time weather application with beautiful UI and location-based forecasts.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card" data-category="web" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="https://image.qwenlm.ai/public_source/55b14451-c8e6-4ce1-a6c9-767a8f2f5028/1779878d5-5327-484e-af3f-ddd18219c5a4.png" alt="E-Commerce Website" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Website</h3>
+                        <p class="project-desc">Modern e-commerce platform with cart, checkout, and product management features.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card" data-category="app" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="https://image.qwenlm.ai/public_source/55b14451-c8e6-4ce1-a6c9-767a8f2f5028/1da26c475-73d5-4e01-9672-31b998d67ad5.png" alt="Chat Application" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Chat Application</h3>
+                        <p class="project-desc">Real-time chat application with WebSocket integration and modern messaging UI.</p>
+                        <div class="project-tags">
+                            <span class="tag">Socket.io</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Section -->
+    <section class="section github">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">GitHub Stats</span>
+                <h2 class="section-title">Open Source <span class="gradient-text">Activity</span></h2>
+                <p class="section-subtitle">My contributions and repositories on GitHub</p>
+            </div>
+
+            <div class="github-grid">
+                <div class="github-card glass-card" data-aos="fade-up">
+                    <div class="github-card-header">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub Profile</h3>
+                    </div>
+                    <div class="github-stats">
+                        <div class="github-stat">
+                            <span class="stat-value">50+</span>
+                            <span class="stat-label">Repositories</span>
+                        </div>
+                        <div class="github-stat">
+                            <span class="stat-value">200+</span>
+                            <span class="stat-label">Contributions</span>
+                        </div>
+                        <div class="github-stat">
+                            <span class="stat-value">100+</span>
+                            <span class="stat-label">Stars</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary ripple-btn">
+                        <i class="fab fa-github"></i>
+                        <span>Visit GitHub</span>
+                    </a>
+                </div>
+
+                <div class="github-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="github-card-header">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3>Top Languages</h3>
+                    </div>
+                    <div class="languages-list">
+                        <div class="language-item">
+                            <div class="lang-info">
+                                <span class="lang-dot" style="background:#E34F26"></span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="lang-bar"><div class="lang-progress" style="width:85%"></div></div>
+                        </div>
+                        <div class="language-item">
+                            <div class="lang-info">
+                                <span class="lang-dot" style="background:#00599C"></span>
+                                <span>C++</span>
+                            </div>
+                            <div class="lang-bar"><div class="lang-progress" style="width:70%"></div></div>
+                        </div>
+                        <div class="language-item">
+                            <div class="lang-info">
+                                <span class="lang-dot" style="background:#3776AB"></span>
+                                <span>Python</span>
+                            </div>
+                            <div class="lang-bar"><div class="lang-progress" style="width:60%"></div></div>
+                        </div>
+                        <div class="language-item">
+                            <div class="lang-info">
+                                <span class="lang-dot" style="background:#1572B6"></span>
+                                <span>CSS</span>
+                            </div>
+                            <div class="lang-bar"><div class="lang-progress" style="width:50%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="github-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="github-card-header">
+                        <i class="fas fa-fire"></i>
+                        <h3>Recent Activity</h3>
+                    </div>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <i class="fas fa-code-branch"></i>
+                            <div>
+                                <strong>Portfolio Website</strong>
+                                <p>Pushed 3 commits</p>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <i class="fas fa-star"></i>
+                            <div>
+                                <strong>Weather App</strong>
+                                <p>Received 12 stars</p>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <i class="fas fa-code-branch"></i>
+                            <div>
+                                <strong>Chat Application</strong>
+                                <p>Merged PR #24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">Education & <span class="gradient-text">Timeline</span></h2>
+                <p class="section-subtitle">My academic journey and milestones</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">2023 - Present</span>
+                        <h3 class="timeline-title">B.Sc. in Computer Science & Engineering</h3>
+                        <h4 class="timeline-subtitle">East Delta University</h4>
+                        <p class="timeline-desc">
+                            Pursuing a comprehensive degree in Computer Science & Engineering with focus on
+                            software development, algorithms, and modern web technologies.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">CGPA: NA/4.00</span>
+                            <span class="tag">Expected Graduation: 2027</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">2021 - 2023</span>
+                        <h3 class="timeline-title">Higher Secondary Certificate (HSC)</h3>
+                        <h4 class="timeline-subtitle">Science Group</h4>
+                        <p class="timeline-desc">
+                            Completed higher secondary education with a strong foundation in Mathematics,
+                            Physics, and Information Technology.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">GPA: 5.00</span>
+                            <span class="tag">Science</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">2019 - 2021</span>
+                        <h3 class="timeline-title">Secondary School Certificate (SSC)</h3>
+                        <h4 class="timeline-subtitle">Science Group</h4>
+                        <p class="timeline-desc">
+                            Built a solid foundation in science and mathematics, sparking my initial interest
+                            in computer science and programming.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">GPA: 5.00</span>
+                            <span class="tag">Science</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section achievements">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">My Achievements</span>
+                <h2 class="section-title">Milestones & <span class="gradient-text">Awards</span></h2>
+                <p class="section-subtitle">Recognition and accomplishments along the way</p>
+            </div>
+
+            <div class="achievements-grid">
+                <div class="achievement-card glass-card" data-aos="zoom-in">
+                    <div class="achievement-icon"><i class="fas fa-code"></i></div>
+                    <div class="achievement-number" data-target="300">0</div>
+                    <div class="achievement-label">Problems Solved</div>
+                </div>
+                <div class="achievement-card glass-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="achievement-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="achievement-number" data-target="25">0</div>
+                    <div class="achievement-label">Certificates Earned</div>
+                </div>
+                <div class="achievement-card glass-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="achievement-icon"><i class="fas fa-rocket"></i></div>
+                    <div class="achievement-number" data-target="15">0</div>
+                    <div class="achievement-label">Projects Completed</div>
+                </div>
+                <div class="achievement-card glass-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="achievement-number" data-target="12">0</div>
+                    <div class="achievement-label">Coding Contests</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What I Do</span>
+                <h2 class="section-title">My <span class="gradient-text">Services</span></h2>
+                <p class="section-subtitle">How I can help bring your ideas to life</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card glass-card" data-aos="fade-up">
+                    <div class="service-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Building responsive, modern websites with clean code and optimal performance.</p>
+                </div>
+                <div class="service-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon"><i class="fas fa-palette"></i></div>
+                    <h3>Frontend Development</h3>
+                    <p>Crafting beautiful user interfaces with smooth animations and excellent UX.</p>
+                </div>
+                <div class="service-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon"><i class="fas fa-pen-ruler"></i></div>
+                    <h3>UI Design</h3>
+                    <p>Designing intuitive interfaces that balance aesthetics with functionality.</p>
+                </div>
+                <div class="service-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Problem Solving</h3>
+                    <p>Solving complex algorithmic challenges with efficient and elegant solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Work <span class="gradient-text">Together</span></h2>
+                <p class="section-subtitle">Have a project in mind? Let's discuss it!</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>tarekurrahman.tek@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+880 1608-724320</p>
+                        </div>
+                    </div>
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Chittagong, Bangladesh</p>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://github.com/tarekur-rahman-tr" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/tarekur-rahman07" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/rahmannn.t" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                         <a href="https://www.instagram.com/rahmannn.t/"class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form glass-card" data-aos="fade-left" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary ripple-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Send Message</span>
+                    </button>
+                </form>
+            </div>
+
+            <div class="map-container glass-card" data-aos="fade-up">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118584.88604926867!2d91.7034!3d22.3569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd8a64095dfd3%3A0x5015cc5bcb6905d9!2sChittagong!5e0!3m2!1sen!2sbd!4v1234567890" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="nav-logo">
+                        <span class="logo-bracket">&lt;</span>
+                        <span class="logo-text">Tarekur</span>
+                        <span class="logo-bracket">/&gt;</span>
+                    </a>
+                    <p>Computer Science & Engineering student passionate about building modern web experiences.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/tarekur-rahman-tr" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/tarekur-rahman07" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/rahmannn.t" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/rahmannn.t/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Made with <i class="fas fa-heart" style="color:#ef4444"></i> by <span class="gradient-text">Md. Tarekur Rahman</span></p>
+                <p>&copy; 2026 All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
