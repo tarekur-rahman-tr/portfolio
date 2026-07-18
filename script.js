@@ -342,29 +342,52 @@ document.getElementById('back-to-top').addEventListener('click', () => {
 });
 
 // ============================================
-// CONTACT FORM
+// CONTACT FORM (EmailJS)
 // ============================================
-const contactForm = document.getElementById('contact-form');
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const formData = new FormData(contactForm);
-    const name = formData.get('name');
 
-    // Show success message
+const contactForm = document.getElementById("contact-form");
+
+contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
     const btn = contactForm.querySelector('button[type="submit"]');
     const originalHTML = btn.innerHTML;
-    btn.innerHTML = '<i class="fas fa-check"></i><span>Message Sent!</span>';
-    btn.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
 
-    setTimeout(() => {
-        btn.innerHTML = originalHTML;
-        btn.style.background = '';
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i><span> Sending...</span>';
+    btn.disabled = true;
+
+    emailjs.sendForm(
+        "service_z4gc5to",
+        "template_lzl5pvk",
+        this
+    )
+    .then(() => {
+
+        btn.innerHTML = '<i class="fas fa-check"></i><span> Message Sent!</span>';
+        btn.style.background = "linear-gradient(135deg, #10b981 0%, #059669 100%)";
+
         contactForm.reset();
-    }, 3000);
 
-    console.log('Form submitted:', Object.fromEntries(formData));
+        setTimeout(() => {
+            btn.innerHTML = originalHTML;
+            btn.style.background = "";
+            btn.disabled = false;
+        }, 3000);
+
+    })
+    .catch((error) => {
+
+        console.error(error);
+
+        btn.innerHTML = '<i class="fas fa-times"></i><span> Failed</span>';
+        btn.disabled = false;
+
+        setTimeout(() => {
+            btn.innerHTML = originalHTML;
+        }, 3000);
+
+    });
 });
-
 // ============================================
 // CARD TILT EFFECT
 // ============================================
