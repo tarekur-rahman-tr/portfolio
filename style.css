@@ -1696,3 +1696,26 @@ body.light-mode {
     background: var(--primary);
 }
 
+
+
+/* EDITORIAL CHARCOAL / IVORY / BURNT ORANGE THEME */
+:root { --bg-primary:#0b0b0a; --bg-secondary:#121210; --card-bg:rgba(255,255,255,.035); --card-border:rgba(239,232,220,.13); --primary:#f05a1a; --secondary:#d94b12; --accent:#ff7a36; --text-primary:#f1eee8; --text-secondary:#aaa59d; --gradient:linear-gradient(120deg,#f05a1a,#ff9a58); --gradient-hover:linear-gradient(120deg,#ff9a58,#f05a1a); --shadow:0 18px 55px rgba(0,0,0,.35); --shadow-glow:0 0 40px rgba(240,90,26,.16); }
+[data-theme="light"] { --bg-primary:#f3f0e9; --bg-secondary:#fffdf8; --card-bg:rgba(255,255,255,.72); --card-border:rgba(30,25,20,.12); --text-primary:#171513; --text-secondary:#625d56; }
+body { background:var(--bg-primary); letter-spacing:-.012em; } ::selection { background:#f05a1a; color:#fff; }
+.navbar { background:rgba(11,11,10,.9); border-bottom:1px solid rgba(255,255,255,.09); backdrop-filter:blur(18px); } .logo-bracket,.hero-greeting,.section-tag { color:#f4773a; }
+.nav-link { font-size:.78rem; letter-spacing:.04em; text-transform:uppercase; } .nav-link:after { background:#f05a1a; }
+.hero { min-height:min(900px,100vh); background:radial-gradient(ellipse at 76% 43%,rgba(240,90,26,.12),transparent 32%),#0b0b0a; } .hero-overlay { background:linear-gradient(90deg,rgba(11,11,10,.98),rgba(11,11,10,.82) 52%,rgba(11,11,10,.2)); }
+.hero-name { color:#f1eee8; font-size:clamp(3.5rem,8vw,7.8rem); line-height:.94; letter-spacing:-.075em; font-weight:800; } .gradient-text { background:linear-gradient(100deg,#f05a1a,#ff9a58); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+.hero-typed-wrapper { font-family:Georgia,serif; font-style:italic; color:#e9e2d8; } .typed-text { color:#f4773a; font-weight:600; } .hero-description,.section-subtitle { color:#aaa59d; line-height:1.85; }
+.btn { border-radius:999px; } .btn-primary { background:#f05a1a; color:#160d08; border:1px solid #f05a1a; box-shadow:0 8px 30px rgba(240,90,26,.18); } .btn-primary:hover { background:#ff7a36; } .btn-secondary { border:1px solid rgba(241,238,232,.3); color:#f1eee8; background:transparent; }
+.social-icon { border-color:rgba(241,238,232,.2); color:#e8e1d7; } .social-icon:hover { background:#f05a1a; border-color:#f05a1a; color:#100b08; }
+.image-wrapper { border:1px solid rgba(240,90,26,.35); box-shadow:0 0 80px rgba(240,90,26,.13); } .image-glow { background:radial-gradient(circle,rgba(240,90,26,.28),transparent 68%); } .floating-badge { background:#171512; border:1px solid rgba(240,90,26,.5); color:#ff7a36; }
+.section { background:#0b0b0a; } .section:nth-of-type(even) { background:#10100e; } .section-title { color:#f1eee8; letter-spacing:-.055em; }
+.glass-card,.skill-category,.stat-card,.project-card,.achievement-card,.education-card { background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.018)); border:1px solid rgba(241,238,232,.12); border-radius:16px; box-shadow:0 14px 40px rgba(0,0,0,.18); backdrop-filter:blur(12px); }
+.glass-card:hover,.project-card:hover,.skill-category:hover { border-color:rgba(240,90,26,.5); box-shadow:0 18px 50px rgba(240,90,26,.09); } .about-heading,.category-header h3,.project-title,.achievement-title { color:#f1eee8; }
+.about-subheading,.about-text,.info-label { color:#aaa59d; } .info-value { color:#eee8df; } .stat-number,.achievement-number,.category-icon { color:#f4773a; }
+.skill-bar { background:rgba(255,255,255,.1); } .skill-progress { background:linear-gradient(90deg,#d94b12,#ff9a58); }
+.filter-btn { border:1px solid rgba(241,238,232,.18); color:#c8c1b7; background:transparent; border-radius:999px; } .filter-btn.active,.filter-btn:hover { background:#f05a1a; border-color:#f05a1a; color:#160d08; }
+input,textarea { background:#141310!important; color:#f1eee8!important; border:1px solid rgba(241,238,232,.16)!important; } input:focus,textarea:focus { border-color:#f05a1a!important; }
+@media(max-width:768px){ .hero{min-height:auto;padding-top:115px;} .hero-content{padding-top:35px;padding-bottom:70px;} .hero-name{font-size:clamp(3rem,14vw,5rem);} .hero-image{max-width:360px;margin:35px auto 0;} .nav-menu{background:#11110f;border:1px solid rgba(255,255,255,.1);} }
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important;}}
