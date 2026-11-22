@@ -2072,3 +2072,23 @@ input,textarea { background:#141310!important; color:#f1eee8!important; border:1
 }
 [data-theme="dark"] input::placeholder,
 [data-theme="dark"] textarea::placeholder { color: #817b72; }
+
+
+/* Fix skill-category symbols: keep icons high-contrast on orange tiles. */
+.category-icon {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
+.category-icon i,
+.category-icon svg {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  opacity: 1 !important;
+  display: inline-block;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+[data-theme="dark"] .category-icon,
+[data-theme="light"] .category-icon {
+  color: #fff !important;
+}
