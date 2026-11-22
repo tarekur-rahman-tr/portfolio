@@ -2156,3 +2156,108 @@ input,textarea { background:#141310!important; color:#f1eee8!important; border:1
   background: linear-gradient(135deg,rgba(104,48,24,.16),rgba(10,9,8,.12));
   mix-blend-mode: multiply;
 }
+
+
+/* ============================================
+   HERO PORTRAIT — STYLE 1: MODERN CARD
+   Clean rectangular editorial frame; no circular orbit.
+   ============================================ */
+.hero-image {
+  isolation: isolate;
+  padding: 18px 12px;
+}
+.hero-image .image-glow {
+  width: 390px;
+  height: 460px;
+  border-radius: 28px;
+  background: radial-gradient(ellipse at 50% 45%, rgba(190,91,45,.20), rgba(94,48,29,.09) 48%, transparent 74%);
+  filter: blur(58px);
+  animation: none;
+}
+.hero-image .image-wrapper {
+  width: min(100%, 430px);
+  height: 500px;
+  aspect-ratio: 4 / 5;
+  border-radius: 24px;
+  padding: 0;
+  overflow: hidden;
+  background: #171310;
+  border: 1px solid rgba(224,119,66,.58);
+  box-shadow:
+    0 28px 72px rgba(0,0,0,.54),
+    0 0 0 8px rgba(255,255,255,.018),
+    inset 0 1px 0 rgba(255,220,195,.10);
+  transform: translateY(0);
+  transition: transform .45s ease, box-shadow .45s ease;
+}
+.hero-image .image-wrapper:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 34px 82px rgba(0,0,0,.62), 0 0 38px rgba(190,91,45,.13);
+}
+.hero-image .image-wrapper::before {
+  display: none !important;
+  animation: none !important;
+}
+.hero-image .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 22%;
+  display: block;
+  border: 0 !important;
+  border-radius: 0 !important;
+  filter: none;
+  box-shadow: none;
+}
+.hero-image .floating-badge {
+  width: 58px;
+  height: 58px;
+  border-radius: 17px;
+  background: rgba(17,15,13,.94);
+  color: #f0783e;
+  border: 1px solid rgba(224,119,66,.38);
+  box-shadow: 0 12px 30px rgba(0,0,0,.38);
+  backdrop-filter: blur(14px);
+  animation: none;
+  font-size: 1.35rem;
+}
+.hero-image .floating-badge i {
+  color: #f0783e;
+}
+.hero-image .badge-1 {
+  top: 8%;
+  left: -12px;
+}
+.hero-image .badge-2 {
+  top: 48%;
+  right: -12px;
+}
+.hero-image .badge-3 {
+  bottom: 8%;
+  left: -12px;
+}
+@media (max-width: 992px) {
+  .hero-image .image-wrapper {
+    width: min(100%, 380px);
+    height: 460px;
+  }
+}
+@media (max-width: 576px) {
+  .hero-image {
+    padding: 14px 18px;
+  }
+  .hero-image .image-wrapper {
+    width: min(100%, 340px);
+    height: 420px;
+    border-radius: 20px;
+  }
+  .hero-image .floating-badge {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    font-size: 1.15rem;
+  }
+  .hero-image .badge-1 { left: 0; }
+  .hero-image .badge-2 { right: 0; }
+  .hero-image .badge-3 { left: 0; }
+}
