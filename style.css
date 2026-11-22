@@ -2092,3 +2092,67 @@ input,textarea { background:#141310!important; color:#f1eee8!important; border:1
 [data-theme="light"] .category-icon {
   color: #fff !important;
 }
+
+
+/* ============================================
+   DARK CINEMATIC PROFILE PORTRAIT
+   Remove the old cyan/purple orbit and use warm,
+   restrained bronze lighting with a clean portrait edge.
+   ============================================ */
+.hero-image .image-glow {
+  width: 430px;
+  height: 430px;
+  background: radial-gradient(circle, rgba(190,75,28,.24) 0%, rgba(92,38,18,.12) 42%, transparent 72%);
+  filter: blur(54px);
+  animation: none;
+}
+.hero-image .image-wrapper {
+  padding: 5px;
+  background: linear-gradient(145deg, #9b4a25, #302019 42%, #b86b3e 72%, #3a241b);
+  border: 1px solid rgba(202,125,78,.42);
+  box-shadow:
+    0 24px 70px rgba(0,0,0,.58),
+    0 0 42px rgba(164,70,31,.16),
+    inset 0 0 0 1px rgba(255,220,190,.08);
+}
+.hero-image .image-wrapper::before {
+  display: none !important;
+  animation: none !important;
+}
+.hero-image .image-wrapper img {
+  border: 0;
+  border-radius: 50%;
+  filter: contrast(1.07) saturate(.86) brightness(.96);
+  box-shadow: inset 0 0 30px rgba(0,0,0,.18);
+}
+.hero-image .floating-badge {
+  background: rgba(18,15,13,.94);
+  color: #f18a53;
+  border: 1px solid rgba(202,125,78,.48);
+  box-shadow: 0 8px 26px rgba(0,0,0,.42), 0 0 20px rgba(190,75,28,.10);
+  backdrop-filter: blur(12px);
+}
+.hero-image .floating-badge i {
+  color: #f18a53;
+}
+[data-theme="light"] .hero-image .image-wrapper {
+  background: linear-gradient(145deg,#9b4a25,#493024 48%,#bd7952);
+  box-shadow: 0 20px 55px rgba(71,43,27,.20);
+}
+[data-theme="light"] .hero-image .floating-badge {
+  background: rgba(30,23,19,.94);
+  color: #f18a53;
+}
+
+/* Apply the same warm cinematic treatment to the About portrait. */
+.about-image .image-frame {
+  border: 1px solid rgba(190,112,69,.34);
+  box-shadow: 0 22px 60px rgba(0,0,0,.34), 0 0 34px rgba(164,70,31,.10);
+}
+.about-image .image-frame img {
+  filter: contrast(1.08) saturate(.82) brightness(.92);
+}
+.about-image .image-overlay {
+  background: linear-gradient(135deg,rgba(104,48,24,.16),rgba(10,9,8,.12));
+  mix-blend-mode: multiply;
+}
