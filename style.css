@@ -1944,3 +1944,131 @@ input,textarea { background:#141310!important; color:#f1eee8!important; border:1
 }
 [data-theme="light"] body .map-container iframe { filter:none; }
 [data-theme="light"] body .loader { background:var(--bg-primary); color:var(--text-primary); }
+
+
+/* ============================================
+   CINEMATIC EDITORIAL DARK THEME
+   Warm charcoal, ivory typography, burnt-orange accents
+   ============================================ */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-primary: #0b0b0a;
+  --bg-secondary: #121210;
+  --card-bg: rgba(255,255,255,.035);
+  --card-border: rgba(239,232,220,.13);
+  --primary: #e45b24;
+  --secondary: #b94318;
+  --accent: #f08a55;
+  --text-primary: #f1eee8;
+  --text-secondary: #aaa59d;
+  --gradient: linear-gradient(120deg,#e45b24 0%,#f08a55 100%);
+  --gradient-hover: linear-gradient(120deg,#f08a55 0%,#e45b24 100%);
+  --shadow: 0 18px 55px rgba(0,0,0,.38);
+  --shadow-glow: 0 0 38px rgba(228,91,36,.16);
+}
+[data-theme="dark"] body,
+[data-theme="dark"] body main,
+[data-theme="dark"] body .section,
+[data-theme="dark"] body section {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+[data-theme="dark"] body .section:nth-of-type(even) {
+  background-color: #10100e;
+}
+[data-theme="dark"] .navbar.scrolled {
+  background: rgba(11,11,10,.86);
+  border-bottom-color: rgba(239,232,220,.10);
+}
+[data-theme="dark"] .hero {
+  background:
+    radial-gradient(ellipse at 78% 42%,rgba(228,91,36,.13),transparent 34%),
+    radial-gradient(ellipse at 12% 82%,rgba(240,138,85,.045),transparent 35%),
+    #0b0b0a;
+}
+[data-theme="dark"] .hero-overlay {
+  background: linear-gradient(90deg,rgba(11,11,10,.98),rgba(11,11,10,.82) 54%,rgba(11,11,10,.18));
+}
+[data-theme="dark"] .hero-name,
+[data-theme="dark"] .section-title,
+[data-theme="dark"] .about-heading,
+[data-theme="dark"] .project-title,
+[data-theme="dark"] .achievement-title,
+[data-theme="dark"] .timeline-title {
+  color: #f1eee8;
+}
+[data-theme="dark"] .hero-description,
+[data-theme="dark"] .section-subtitle,
+[data-theme="dark"] .about-text,
+[data-theme="dark"] .timeline-desc,
+[data-theme="dark"] .project-desc {
+  color: #aaa59d;
+}
+[data-theme="dark"] .glass-card,
+[data-theme="dark"] .skill-category,
+[data-theme="dark"] .stat-card,
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .achievement-card,
+[data-theme="dark"] .education-card,
+[data-theme="dark"] .service-card,
+[data-theme="dark"] .timeline-content,
+[data-theme="dark"] .github-card,
+[data-theme="dark"] .contact-card,
+[data-theme="dark"] .contact-form {
+  background: linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.018));
+  border-color: rgba(239,232,220,.12);
+  box-shadow: 0 16px 45px rgba(0,0,0,.20);
+}
+[data-theme="dark"] .glass-card:hover,
+[data-theme="dark"] .project-card:hover,
+[data-theme="dark"] .skill-category:hover {
+  border-color: rgba(228,91,36,.42);
+  box-shadow: 0 18px 48px rgba(228,91,36,.10);
+}
+[data-theme="dark"] .mouse-glow {
+  background: radial-gradient(circle,rgba(228,91,36,.12) 0%,transparent 70%);
+}
+[data-theme="dark"] .image-glow {
+  background: radial-gradient(circle,rgba(228,91,36,.24),transparent 68%);
+}
+[data-theme="dark"] .theme-toggle,
+[data-theme="dark"] .nav-link:hover,
+[data-theme="dark"] .nav-link.active {
+  color: #f08a55;
+}
+[data-theme="dark"] .btn-primary {
+  background: linear-gradient(120deg,#d94b19,#f08a55);
+  border-color: transparent;
+  color: #fffaf5;
+}
+[data-theme="dark"] .btn-secondary {
+  color: #f1eee8;
+  border-color: rgba(239,232,220,.28);
+}
+[data-theme="dark"] .social-icon {
+  color: #e8e1d7;
+  border-color: rgba(239,232,220,.18);
+}
+[data-theme="dark"] .social-icon:hover {
+  color: #fff;
+  background: #d94b19;
+  border-color: #d94b19;
+}
+[data-theme="dark"] .footer {
+  background: #080807;
+  color: #f1eee8;
+}
+[data-theme="dark"] .footer-bottom {
+  border-color: rgba(239,232,220,.12);
+  color: #aaa59d;
+}
+[data-theme="dark"] input,
+[data-theme="dark"] textarea,
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group textarea {
+  background: #11110f !important;
+  color: #f1eee8 !important;
+  border-color: rgba(239,232,220,.16) !important;
+}
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder { color: #817b72; }
