@@ -1837,3 +1837,110 @@ input,textarea { background:#141310!important; color:#f1eee8!important; border:1
 [data-theme="light"] .map-container iframe { filter:none; }
 [data-theme="light"] .back-to-top { color:#fff; }
 [data-theme="light"] .theme-toggle { color:#c94b16; }
+
+
+
+/* FINAL FULL-PAGE LIGHT THEME FIX
+   Use theme tokens across every section and nested component. */
+[data-theme="light"] body,
+[data-theme="light"] body main,
+[data-theme="light"] body .section,
+[data-theme="light"] body section,
+[data-theme="light"] body .hero,
+[data-theme="light"] body .about,
+[data-theme="light"] body .skills,
+[data-theme="light"] body .projects,
+[data-theme="light"] body .education,
+[data-theme="light"] body .achievements,
+[data-theme="light"] body .contact {
+  background-color:var(--bg-primary);
+  color:var(--text-primary);
+}
+[data-theme="light"] body .section:nth-of-type(even),
+[data-theme="light"] body .section:nth-of-type(odd) {
+  background-color:var(--bg-primary);
+}
+[data-theme="light"] body .section-title,
+[data-theme="light"] body h1,
+[data-theme="light"] body h2,
+[data-theme="light"] body h3,
+[data-theme="light"] body h4,
+[data-theme="light"] body .hero-name,
+[data-theme="light"] body .about-heading,
+[data-theme="light"] body .category-header h3,
+[data-theme="light"] body .project-title,
+[data-theme="light"] body .timeline-title,
+[data-theme="light"] body .service-card h3,
+[data-theme="light"] body .contact-card h4 {
+  color:var(--text-primary);
+}
+[data-theme="light"] body p,
+[data-theme="light"] body .section-subtitle,
+[data-theme="light"] body .hero-description,
+[data-theme="light"] body .about-text,
+[data-theme="light"] body .timeline-desc,
+[data-theme="light"] body .service-card p,
+[data-theme="light"] body .project-desc,
+[data-theme="light"] body .contact-card p,
+[data-theme="light"] body .footer-brand p {
+  color:var(--text-secondary);
+}
+[data-theme="light"] body .glass-card,
+[data-theme="light"] body .skill-category,
+[data-theme="light"] body .stat-card,
+[data-theme="light"] body .project-card,
+[data-theme="light"] body .achievement-card,
+[data-theme="light"] body .service-card,
+[data-theme="light"] body .timeline-content,
+[data-theme="light"] body .github-card,
+[data-theme="light"] body .contact-card,
+[data-theme="light"] body .contact-form {
+  background:var(--card-bg);
+  color:var(--text-primary);
+  border-color:var(--card-border);
+  box-shadow:0 12px 35px rgba(55,42,28,.07);
+}
+[data-theme="light"] body .timeline::before { background:var(--gradient); }
+[data-theme="light"] body .timeline-date,
+[data-theme="light"] body .tag {
+  background:rgba(201,75,22,.09);
+  color:#a83c12;
+  border-color:rgba(201,75,22,.2);
+}
+[data-theme="light"] body .github-stat,
+[data-theme="light"] body .activity-item,
+[data-theme="light"] body .stat-card .stat-icon {
+  background:rgba(35,29,23,.045);
+  color:var(--text-primary);
+}
+[data-theme="light"] body .activity-item p,
+[data-theme="light"] body .stat-label,
+[data-theme="light"] body .info-label { color:var(--text-secondary); }
+[data-theme="light"] body .info-value,
+[data-theme="light"] body .skill-info,
+[data-theme="light"] body .lang-info { color:var(--text-primary); }
+[data-theme="light"] body .skill-bar,
+[data-theme="light"] body .lang-bar { background:rgba(35,29,23,.12); }
+[data-theme="light"] body .form-group label { color:var(--text-primary); }
+[data-theme="light"] body .form-group input,
+[data-theme="light"] body .form-group textarea,
+[data-theme="light"] body input,
+[data-theme="light"] body textarea {
+  background:#fffdf8 !important;
+  color:#211d19 !important;
+  border-color:var(--card-border) !important;
+}
+[data-theme="light"] body .footer {
+  background:var(--bg-secondary);
+  color:var(--text-primary);
+}
+[data-theme="light"] body .footer-links a { color:var(--text-secondary); }
+[data-theme="light"] body .footer-bottom {
+  color:var(--text-secondary);
+  border-color:var(--card-border);
+}
+[data-theme="light"] body .project-overlay {
+  background:rgba(245,242,236,.88);
+}
+[data-theme="light"] body .map-container iframe { filter:none; }
+[data-theme="light"] body .loader { background:var(--bg-primary); color:var(--text-primary); }
